@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import styles from './BestSelf.module.css';
+import styles from "./BestSelf.module.css";
 
 const BestSelf = () => {
   return (

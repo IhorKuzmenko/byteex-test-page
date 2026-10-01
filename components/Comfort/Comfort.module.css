@@ -1,0 +1,315 @@
+.section {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.container {
+  padding-top: 38px;
+  padding-bottom: 24px;
+}
+
+/* =========================
+   Title
+========================= */
+
+.title {
+  margin-bottom: 40px;
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-align: center;
+
+  color: var(--color-primary);
+}
+
+/* =========================
+   Cards
+========================= */
+
+.cardsWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 218px;
+  padding: 30px 24px;
+
+  text-align: center;
+
+  background-color: #f2f0f1;
+  border-radius: 5px;
+}
+
+.card:nth-child(2) {
+  background-color: var(--color-cream);
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 15px;
+
+  color: var(--color-primary);
+}
+
+.cardTitle {
+  margin-bottom: 13px;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--color-primary);
+}
+
+.cardText {
+  max-width: 230px;
+
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.55;
+
+  color: var(--color-gray);
+}
+
+/* =========================
+   Slider arrows
+========================= */
+
+.sliderButton {
+  display: none;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  width: 250px;
+  height: 39px;
+  margin: 37px auto 0;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-white);
+  background-color: var(--color-primary);
+
+  border: 0;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+.ctaArrow {
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* =========================
+   Rating
+========================= */
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 8px;
+}
+
+.stars {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -1px;
+
+  color: #ffb800;
+}
+
+.ratingText {
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-gray);
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media screen and (max-width: 1023px) {
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    min-height: 205px;
+    padding: 25px 18px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 28px;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  /* Slider */
+
+  .cardsWrapper {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .cards {
+    display: block;
+  }
+
+  .card {
+    display: none;
+
+    width: 188px;
+    min-height: 188px;
+    margin: 0 auto;
+    padding: 25px 18px;
+
+    border-radius: 4px;
+  }
+
+  .activeCard {
+    display: flex;
+  }
+
+  /*
+   * На mobile в макете активная карточка
+   * имеет светло-серый фон.
+   */
+  .card:nth-child(2) {
+    background-color: #f2f0f1;
+  }
+
+  .icon {
+    width: 39px;
+    height: 39px;
+    margin-bottom: 14px;
+  }
+
+  .cardTitle {
+    margin-bottom: 12px;
+
+    font-size: 13px;
+  }
+
+  .cardText {
+    max-width: 155px;
+
+    font-size: 8px;
+    line-height: 1.5;
+  }
+
+  /* Arrows */
+
+  .sliderButton {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 36px;
+    padding: 0;
+
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1;
+
+    color: var(--color-gray);
+    background-color: transparent;
+
+    border: 0;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  /* CTA */
+
+  .cta {
+    justify-content: center;
+    gap: 18px;
+
+    width: 100%;
+    max-width: 240px;
+    height: 37px;
+    margin-top: 27px;
+
+    font-size: 11px;
+  }
+
+  .ctaArrow {
+    font-size: 16px;
+  }
+
+  /* Rating */
+
+  .rating {
+    gap: 9px;
+
+    margin-top: 8px;
+  }
+
+  .stars {
+    font-size: 11px;
+  }
+
+  .ratingText {
+    font-size: 7px;
+  }
+}
