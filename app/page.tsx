@@ -7,6 +7,7 @@ import Comfort from "@/components/Comfort/Comfort";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import FAQ from "@/components/FAQ/FAQ";
 import GreenImpact from "@/components/GreenImpact/GreenImpact";
+import FindSomething from "@/components/FindSomething/FindSomething";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <GreenImpact />
+      <FindSomething />
     </main>
   );
 }

@@ -1,0 +1,337 @@
+.section {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 52px;
+  padding-bottom: 30px;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.heading {
+  width: 100%;
+  max-width: 540px;
+
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 14px;
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--color-primary);
+}
+
+.desktopDescription {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.55;
+
+  color: var(--color-gray);
+}
+
+.mobileDescription {
+  display: none;
+}
+
+/* =========================
+   Collage
+========================= */
+
+.imageWrapper {
+  width: 620px;
+  margin-top: 27px;
+}
+
+.image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+/* =========================
+   Actions
+========================= */
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 24px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  width: 310px;
+  height: 40px;
+  padding: 0;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-white);
+  background-color: var(--color-primary);
+
+  border: 0;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+.ctaArrow {
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* =========================
+   Shipping + payments
+========================= */
+
+.desktopPayment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  margin-top: 7px;
+}
+
+.shippingText {
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 1;
+
+  color: #20a84a;
+
+  white-space: nowrap;
+}
+
+.paymentImage {
+  display: block;
+
+  width: 180px;
+  height: auto;
+}
+
+/* =========================
+   Mobile rating
+========================= */
+
+.mobileRating {
+  display: none;
+}
+
+/* =========================
+   Desktop benefits
+========================= */
+
+.desktopBenefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 17px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 25px;
+}
+
+.benefitIcon {
+  display: flex;
+  flex: 0 0 26px;
+  align-items: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+
+  background-color: #e4e4e4;
+  border-radius: 50%;
+}
+
+.benefitSvg {
+  width: 15px;
+  height: 15px;
+
+  color: var(--color-primary);
+}
+
+.benefitText {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: var(--color-gray);
+}
+
+.separator {
+  width: 1px;
+  height: 37px;
+
+  background-color: #dedede;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media screen and (max-width: 1023px) {
+  .imageWrapper {
+    width: 540px;
+  }
+
+  .desktopBenefits {
+    margin-top: 15px;
+  }
+
+  .benefit {
+    padding: 0 18px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media screen and (max-width: 767px) {
+  .section {
+    background: linear-gradient(
+      to bottom,
+      var(--color-white) 0%,
+      var(--color-white) 70%,
+      #fff9f1 70%,
+      #fff9f1 100%
+    );
+  }
+
+  .container {
+    padding-top: 38px;
+    padding-bottom: 28px;
+  }
+
+  /* Heading */
+
+  .heading {
+    max-width: 280px;
+  }
+
+  .title {
+    margin-bottom: 13px;
+
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .desktopDescription {
+    display: none;
+  }
+
+  .mobileDescription {
+    display: block;
+
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: var(--color-gray);
+  }
+
+  /* Collage */
+
+  .imageWrapper {
+    width: 265px;
+    margin-top: 22px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Actions */
+
+  .actions {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  /* CTA */
+
+  .cta {
+    width: 100%;
+    max-width: 265px;
+    height: 41px;
+
+    font-size: 12px;
+  }
+
+  .ctaArrow {
+    font-size: 17px;
+  }
+
+  /* Desktop-only content */
+
+  .desktopPayment {
+    display: none;
+  }
+
+  .desktopBenefits {
+    display: none;
+  }
+
+  /* Rating */
+
+  .mobileRating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    margin-top: 9px;
+  }
+
+  .stars {
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: -1px;
+
+    color: #ffb800;
+  }
+
+  .ratingText {
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 1;
+
+    color: var(--color-gray);
+  }
+}
