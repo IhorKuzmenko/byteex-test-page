@@ -1,0 +1,211 @@
+.section {
+  width: 100%;
+  background-color: #f2f0f1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 390px minmax(0, 500px);
+  grid-template-areas:
+    "collage title"
+    "collage content";
+  column-gap: 70px;
+
+  justify-content: center;
+  align-items: start;
+
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+/* =========================
+   Collage
+========================= */
+
+.collage {
+  grid-area: collage;
+
+  align-self: center;
+
+  width: 390px;
+}
+
+.collageImage {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+/* =========================
+   Title
+========================= */
+
+.title {
+  grid-area: title;
+
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: var(--color-primary);
+}
+
+/* =========================
+   Content
+========================= */
+
+.content {
+  grid-area: content;
+
+  width: 100%;
+  max-width: 500px;
+}
+
+.content p {
+  margin-bottom: 15px;
+
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: var(--color-gray);
+}
+
+.content p:last-of-type {
+  margin-bottom: 18px;
+}
+
+/* =========================
+   Button
+========================= */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 42px;
+  padding: 0;
+
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+
+  color: var(--color-white);
+  background-color: var(--color-primary);
+
+  border: 0;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media screen and (max-width: 1023px) {
+  .container {
+    grid-template-columns: 330px minmax(0, 430px);
+    column-gap: 45px;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .collage {
+    width: 330px;
+  }
+
+  .content {
+    max-width: 430px;
+  }
+
+  .title {
+    margin-top: 5px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 28px;
+    padding-bottom: 32px;
+  }
+
+  /* Title */
+
+  .title {
+    order: 1;
+
+    width: 100%;
+    margin: 0 0 22px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+
+    color: var(--color-primary);
+  }
+
+  /* Collage */
+
+  .collage {
+    order: 2;
+
+    align-self: center;
+
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  .collageImage {
+    display: block;
+
+    width: 100%;
+    height: auto;
+  }
+
+  /* Content */
+
+  .content {
+    order: 3;
+
+    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+  }
+
+  .content p {
+    margin-bottom: 16px;
+
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: var(--color-gray);
+  }
+
+  .content p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* В mobile-макете кнопки нет */
+
+  .button {
+    display: none;
+  }
+}
