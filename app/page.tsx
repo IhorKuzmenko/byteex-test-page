@@ -5,6 +5,7 @@ import BenefitsSection from "@/components/Benefits/Benefits";
 import BestSelf from "@/components/BestSelf/BestSelf";
 import Comfort from "@/components/Comfort/Comfort";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import FAQ from "@/components/FAQ/FAQ";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <BestSelf />
       <Comfort />
       <Testimonials />
+      <FAQ />
     </main>
   );
 }
