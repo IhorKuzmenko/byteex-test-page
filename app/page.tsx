@@ -6,6 +6,7 @@ import BestSelf from "@/components/BestSelf/BestSelf";
 import Comfort from "@/components/Comfort/Comfort";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import FAQ from "@/components/FAQ/FAQ";
+import GreenImpact from "@/components/GreenImpact/GreenImpact";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Comfort />
       <Testimonials />
       <FAQ />
+      <GreenImpact />
     </main>
   );
 }

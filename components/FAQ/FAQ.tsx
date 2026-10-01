@@ -1,40 +1,40 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useState } from 'react';
+import Image from "next/image";
+import { useState } from "react";
 
-import styles from './FAQ.module.css';
+import styles from "./FAQ.module.css";
 
 const questions = [
   {
-    question: 'lorem ipsum dolor sit amet',
+    question: "lorem ipsum dolor sit amet",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
   },
   {
-    question: 'lorem ipsum dolor sit amet',
+    question: "lorem ipsum dolor sit amet",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
   },
   {
-    question: 'lorem ipsum dolor sit amet',
+    question: "lorem ipsum dolor sit amet",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
   },
   {
-    question: 'lorem ipsum dolor sit amet',
+    question: "lorem ipsum dolor sit amet",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
   },
   {
-    question: 'lorem ipsum dolor sit amet',
+    question: "lorem ipsum dolor sit amet",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
   },
   {
-    question: 'lorem ipsum dolor sit amet',
+    question: "lorem ipsum dolor sit amet",
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.',
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
   },
 ];
 
@@ -42,7 +42,7 @@ const FAQ = () => {
   const [activeQuestion, setActiveQuestion] = useState<number | null>(0);
 
   const handleQuestion = (index: number) => {
-    setActiveQuestion(current => (current === index ? null : index));
+    setActiveQuestion((current) => (current === index ? null : index));
   };
 
   return (
@@ -65,9 +65,7 @@ const FAQ = () => {
                   >
                     <span>{item.question}</span>
 
-                    <span className={styles.symbol}>
-                      {isOpen ? '−' : '+'}
-                    </span>
+                    <span className={styles.symbol}>{isOpen ? "−" : "+"}</span>
                   </button>
 
                   {isOpen && (
