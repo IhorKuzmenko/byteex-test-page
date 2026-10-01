@@ -1,19 +1,19 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import styles from './Hero.module.css';
+import styles from "./Hero.module.css";
 
 const benefits = [
   {
-    icon: 'Group4467',
-    text: 'Beautiful, comfortable loungewear for day or night.',
+    icon: "Group4467",
+    text: "Beautiful, comfortable loungewear for day or night.",
   },
   {
-    icon: 'Vector',
-    text: 'No wasteful extras, like tags or plastic packaging.',
+    icon: "Vector",
+    text: "No wasteful extras, like tags or plastic packaging.",
   },
   {
-    icon: 'Vector1',
-    text: 'Our signature fabric is incredibly comfortable – unlike anything you’ve ever felt.',
+    icon: "Vector1",
+    text: "Our signature fabric is incredibly comfortable – unlike anything you’ve ever felt.",
   },
 ];
 
@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
 
           <ul className={styles.benefits}>
-            {benefits.map(benefit => (
+            {benefits.map((benefit) => (
               <li className={styles.benefit} key={benefit.text}>
                 <span className={styles.iconWrapper}>
                   <svg className={styles.benefitIcon} aria-hidden="true">

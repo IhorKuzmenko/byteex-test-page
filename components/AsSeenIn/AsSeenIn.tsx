@@ -1,27 +1,27 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import styles from './AsSeenIn.module.css';
+import styles from "./AsSeenIn.module.css";
 
 const logos = [
   {
-    src: '/images/Artboard3_1.png',
-    alt: 'Eco-Stylist',
+    src: "/images/Artboard3_1.png",
+    alt: "Eco-Stylist",
   },
   {
-    src: '/images/Artboard6_1.png',
-    alt: 'Canadian Living',
+    src: "/images/Artboard6_1.png",
+    alt: "Canadian Living",
   },
   {
-    src: '/images/Artboard4_1.png',
-    alt: 'Jillian Harris',
+    src: "/images/Artboard4_1.png",
+    alt: "Jillian Harris",
   },
   {
-    src: '/images/Artboard2_1.png',
-    alt: 'The Eco Hub',
+    src: "/images/Artboard2_1.png",
+    alt: "The Eco Hub",
   },
   {
-    src: '/images/Artboard5_1.png',
-    alt: 'TrendHunter',
+    src: "/images/Artboard5_1.png",
+    alt: "TrendHunter",
   },
 ];
 
@@ -35,7 +35,7 @@ const AsSeenIn = () => {
           {logos.map((logo, index) => (
             <div
               className={`${styles.logoItem} ${
-                index > 2 ? styles.mobileHidden : ''
+                index > 2 ? styles.mobileHidden : ""
               }`}
               key={logo.src}
             >

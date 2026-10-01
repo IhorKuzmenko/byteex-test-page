@@ -1,6 +1,7 @@
-import AsSeenIn from '@/components/AsSeenIn/AsSeenIn';
-import Header from '@/components/Header/Header';
-import Hero from '@/components/Hero/Hero';
+import AsSeenIn from "@/components/AsSeenIn/AsSeenIn";
+import Header from "@/components/Header/Header";
+import Hero from "@/components/Hero/Hero";
+import BenefitsSection from "@/components/Benefits/Benefits";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <AsSeenIn />
+      <BenefitsSection />
     </main>
   );
 }
